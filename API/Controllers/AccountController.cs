@@ -23,13 +23,13 @@ namespace API.Controllers
         // public async Task<ActionResult<AppUser>> Register(String username, string password)
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
-            if(await UserExists(registerDto.UserName)) return BadRequest("Username is taken");
+            if(await UserExists(registerDto.Username)) return BadRequest("Userame is taken");
             
             using var hmac = new HMACSHA512();
 
             var user = new AppUser
             {
-                UserName = registerDto.UserName.ToLower(),
+                UserName = registerDto.Username.ToLower(),
                 PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
                 PasswordSalt = hmac.Key
             };
