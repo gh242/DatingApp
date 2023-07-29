@@ -106,7 +106,7 @@ export class MembersService {
 
       if(member) return of(member);
     // console.log(member);
-    
+    // 如果沒有member, 就去API抓
     return this.http.get<Member>(this.baseUrl + 'users/' + username);
   }
 
@@ -136,6 +136,19 @@ export class MembersService {
 
   deletePhoto(photoId: number){
     return this.http.delete(this.baseUrl + 'users/delete-photo/' + photoId);
+  }
+
+  addLike(username: string){
+    return this.http.post(this.baseUrl + 'likes/' + username, {});
+  }
+
+  getLikes(predicate: string, pageNumber: number, pageSize: number){
+    let params = this.getPaginationHeaders(pageNumber, pageSize);
+
+    params = params.append('predicate', predicate);
+
+    // return this.http.get<Member[]>(this.baseUrl + 'likes?predicate=' + predicate);
+    return this.getPaginatedResult<Member[]>(this.baseUrl + 'likes', params);
   }
 
   private getPaginationHeaders(pageNumber: number, pageSize: number) {

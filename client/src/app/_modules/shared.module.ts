@@ -37,6 +37,7 @@ import { TimeagoModule } from 'ngx-timeago';
     BsDropdownModule,
     ToastrModule,
     TabsModule,
+    NgxGalleryModule,
     NgxSpinnerModule,
     FileUploadModule,
     BsDatepickerModule,

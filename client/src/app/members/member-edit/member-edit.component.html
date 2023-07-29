@@ -28,10 +28,10 @@
                 <strong>Member since:</strong>
                 <p>{{member.created | date: 'dd MM yyyy'}}</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer d-flex justify-content-end">
                 <button type="submit" [disabled]="!editForm.dirty" 
                     form="editForm" 
-                    class="btn btn-success col-12">Save changes</button>
+                    class="btn btn-success col-4">Save changes</button>
             </div>
         </div>
     </div>
