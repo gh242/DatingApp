@@ -1,0 +1,13 @@
+影響到
+account.service.ts
+members.service.ts
+
+  // baseUrl = environment.apiUrl;
+  baseUrl = 'https://localhost:5001/api/';
+
+
+cd api
+dotnet watch --no-hot-reload
+
+cd client
+ng serve

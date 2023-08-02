@@ -1,0 +1,52 @@
+lesson26
+使用ng cli@14 版本，在26課
+安裝  ngx-bootstrap 時，會出現問題，然後，bs-datepickere.css 沒有安裝到
+(改裝ng cli@15)
+
+
+lesson 111
+
+(x)npm install @kolkov/ngx-gallery --legacy-peer-deps
+npm install @kolkov/ngx-gallery --force
+npm install --legacy-peer-deps
+
+
+ngx-gallery不認得，
+
+在app.module.ts 加上
+
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+...
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+
+lesson 120
+npm install ngx-spinner --legacy-peer-deps(不要下這個指令)
+"npm uninstall ngx-spinner --force(如果安裝了上面，先移除)
+npm install ngx-spinner@15 --legacy-peer-deps(因為是第15版本，所以安裝這個才對)
+
+4個地方要設定：
+busy.service.ts
+shared.module.ts
+app.component.html
+angular.json
+
+lesson 132
+安裝
+https://valor-software.com/ng2-file-upload/
+npm install ng2-file-upload@15 --legacy-peer-deps
+
+
+file-drop.directive.d.ts
+file-select.directive.d.ts
+    // { "uploader": { "alias": "uploader"; "required": false; }; }, 
+    { "uploader": "uploader" }, 
+
+lesson 165
+安裝ngx-timeago 也有相同問題
+npm install ngx-timeago --legacy-peer-deps
+{ "date": { "alias": "date"; "required": false; }; "live": { "alias": "live"; "required": false; }; },
+改成
+ {"date" :"date"; "live":"live"},
+
+

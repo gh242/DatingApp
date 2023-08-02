@@ -1,0 +1,65 @@
+PS D:\codes\DatingApp\client> npm install @kolkov/ngx-gallery --force
+npm WARN using --force Recommended protections disabled.
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @kolkov/ngx-gallery@2.0.1
+npm WARN Found: @angular/animations@15.2.9
+npm WARN node_modules/@angular/animations
+npm WARN   peerOptional @angular/animations@"15.2.9" from @angular/platform-browser@15.2.9
+npm WARN   node_modules/@angular/platform-browser
+npm WARN     peer @angular/platform-browser@"15.2.9" from @angular/forms@15.2.9
+npm WARN     node_modules/@angular/forms
+npm WARN     4 more (@angular/platform-browser-dynamic, @angular/router, ...)
+npm WARN   2 more (ngx-bootstrap, the root project)
+npm WARN
+npm WARN Could not resolve dependency:
+npm WARN peer @angular/animations@">=13.0.0 <14" from @kolkov/ngx-gallery@2.0.1
+npm WARN node_modules/@kolkov/ngx-gallery
+npm WARN   @kolkov/ngx-gallery@"^2.0.1" from the root project
+npm WARN
+npm WARN Conflicting peer dependency: @angular/animations@13.4.0
+npm WARN node_modules/@angular/animations
+npm WARN   peer @angular/animations@">=13.0.0 <14" from @kolkov/ngx-gallery@2.0.1
+npm WARN   node_modules/@kolkov/ngx-gallery
+npm WARN     @kolkov/ngx-gallery@"^2.0.1" from the root project
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @kolkov/ngx-gallery@2.0.1
+npm WARN Found: @angular/common@15.2.9
+npm WARN node_modules/@angular/common
+npm WARN   peer @angular/common@"15.2.9" from @angular/forms@15.2.9
+npm WARN   node_modules/@angular/forms
+npm WARN     peer @angular/forms@"^15.0.0" from ngx-bootstrap@10.2.0
+npm WARN     node_modules/ngx-bootstrap
+npm WARN     1 more (the root project)
+npm WARN   6 more (@angular/platform-browser, ...)
+npm WARN
+npm WARN Could not resolve dependency:
+npm WARN peer @angular/common@">=13.0.0 <14" from @kolkov/ngx-gallery@2.0.1
+npm WARN node_modules/@kolkov/ngx-gallery
+npm WARN   @kolkov/ngx-gallery@"^2.0.1" from the root project
+npm WARN
+npm WARN Conflicting peer dependency: @angular/common@13.4.0
+npm WARN node_modules/@angular/common
+npm WARN   peer @angular/common@">=13.0.0 <14" from @kolkov/ngx-gallery@2.0.1
+npm WARN   node_modules/@kolkov/ngx-gallery
+npm WARN     @kolkov/ngx-gallery@"^2.0.1" from the root project
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @kolkov/ngx-gallery@2.0.1
+npm WARN Found: @angular/core@15.2.9
+npm WARN node_modules/@angular/core
+npm WARN   peer @angular/core@"15.2.9" from @angular/animations@15.2.9
+npm WARN   node_modules/@angular/animations
+npm WARN     peerOptional @angular/animations@"15.2.9" from @angular/platform-browser@15.2.9
+npm WARN     node_modules/@angular/platform-browser
+npm WARN     2 more (ngx-bootstrap, the root project)
+npm WARN   9 more (@angular/common, @angular/compiler, @angular/forms, ...)
+npm WARN
+npm WARN Could not resolve dependency:
+npm WARN peer @angular/core@">=13.0.0 <14" from @kolkov/ngx-gallery@2.0.1
+npm WARN node_modules/@kolkov/ngx-gallery
+npm WARN   @kolkov/ngx-gallery@"^2.0.1" from the root project
+npm WARN 
+npm WARN Conflicting peer dependency: @angular/core@13.4.0
+npm WARN node_modules/@angular/core
+npm WARN   peer @angular/core@">=13.0.0 <14" from @kolkov/ngx-gallery@2.0.1
+npm WARN   node_modules/@kolkov/ngx-gallery
+npm WARN     @kolkov/ngx-gallery@"^2.0.1" from the root project
