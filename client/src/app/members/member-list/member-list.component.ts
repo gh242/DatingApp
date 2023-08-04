@@ -21,7 +21,7 @@ export class MemberListComponent implements OnInit {
   // pageSize = 5;
   userParams: UserParams | undefined;
   // user: User | undefined;
-  genderList = [{value: 'male', display: "Males"}, {value: 'female', display: "Feales"}]
+  genderList = [{value: 'male', display: 'Males'}, {value: 'female', display: 'Females'}]
 
   // constructor(private memberService: MembersService, private accountService: AccountService){
   constructor(private memberService: MembersService){
