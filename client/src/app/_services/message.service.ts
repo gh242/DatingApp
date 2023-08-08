@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { HttpTransportType, HubConnection, HubConnectionBuilder } from '@microsoft/signalr';
 import { BehaviorSubject, take } from 'rxjs';
 import { environment } from 'src/environments/environment';
-// import { Group } from '../_models/group';
 import { Message } from '../_models/message';
 import { User } from '../_models/user';
 // import { BusyService } from './busy.service';
@@ -33,7 +32,7 @@ export class MessageService {
       .build();
 
     this.hubConnection.start()
-      .catch(error => console.log(error))
+      .catch(error => console.log(error));
       // .finally(() => this.busyService.idle());
 
     this.hubConnection.on('ReceiveMessageThread', messages => {

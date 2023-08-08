@@ -24,7 +24,7 @@ app.UseCors(builder => builder
 	.AllowAnyHeader()
 	.AllowAnyMethod()
     .AllowCredentials()
-    .WithOrigins("https://localhost:4200", "https://localhost:44376", "https://localhost:44476", "https://localhost:7231"));
+    .WithOrigins("https://localhost:4200"));
 
 app.UseAuthentication();
 app.UseAuthorization();
